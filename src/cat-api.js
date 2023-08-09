@@ -25,11 +25,9 @@ async function fetchBreeds(){
 
 async function fetchCatByBreed (breedId){
     const ENDPOIND = '/images/search';
-
-    try {
         const response = await axios.get(`${BASE_URL}${ENDPOIND}?breed_ids=${breedId}`)
         return response.data;
-    }
+    
 }
 
 
